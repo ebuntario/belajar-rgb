@@ -38,7 +38,8 @@ squares[i].style.backgroundColor = color;
 }
 
 /**
- * It returns 10
+ * @param {number}
+ * @return colors
  */
 function pickColor() {
 var random = Math.floor(Math.random() * colors.length);
