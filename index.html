@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Belajar RGM</title>
-	<link rel="stylesheet" href="game.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Color Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="game.css">
 </head>
+
 <body>
-	<h1>Game Tebak Warna <span id="colorDisplay">RGB</span></h1>
-	<div class="menu"><span id="message"></span></div>
-	<div class="container">
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-	</div>
-	<script src="game.js" type="text/javascript" charset="utf-8" async defer></script>
+  <h1>The Great <br><span id="colorDisplay"></span><br> Color Game</h1>
+  <div class="menu">
+    <button class="" id="reset">New Colors</button>
+    <span id="message"></span>
+    <button class="mode">Easy</button>
+    <button class="mode selected ">Hard</button>
+  </div>
+  <div class="container">
+    <div class="square z-depth-3"></div>
+    <div class="square z-depth-3"></div>
+    <div class="square z-depth-3"></div>
+    <div class="square z-depth-3"></div>
+    <div class="square z-depth-3"></div>
+    <div class="square z-depth-3"></div>
+  </div>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="game.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
+
 </html>
