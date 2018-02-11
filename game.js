@@ -30,9 +30,9 @@ function init() {
         messageDisplay.textContent = 'Correct!';
         resetBtn.textContent = 'Play Again?';
         changeColors(clickedColor);
-        h1.style.backgroundColor = clickedColor;
+        colorDisplay.style.color = clickedColor;
       } else {
-        this.style.backgroundColor = '#fff';
+        this.style.backgroundColor = 'transparent';
         this.classList.remove('z-depth-3');
         messageDisplay.textContent = 'Try Again';
       }
@@ -62,7 +62,7 @@ function reset() {
       squares[i].style.display = 'none';
     }
   }
-  h1.style.backgroundColor = '#fff';
+  colorDisplay.style.color = '#fff';
 }
 
 resetBtn.addEventListener('click', function() {
