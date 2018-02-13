@@ -11,15 +11,13 @@ var resetBtn = document.querySelector('#reset');
 init();
 
 function init() {
-  for (var i = 0; i < modeBtn.length; i++) {
-    modeBtn[i].addEventListener('click', function() {
-      modeBtn[0].classList.remove('selected');
-      modeBtn[1].classList.remove('selected');
-      this.classList.add('selected');
-      this.textContent === 'Easy' ? numSqrs = 3 : numSqrs = 6;
-      reset();
-    });
-  }
+  $('input[type=checkbox]').change(
+      function(){
+          this.checked ? numSqrs = 3 : numSqrs = 6;
+          reset();
+          }
+      );
+
   for (var j = 0; j < squares.length; j++) {
     // add click listeners to squares
     squares[j].addEventListener('click', function() {

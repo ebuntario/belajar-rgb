@@ -9,29 +9,51 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="game.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
   <h1>The Great <br><span id="colorDisplay"></span><br> Color Game</h1>
-  <div class="menu">
-    <button class="waves-effect waves-light btn blue darken-1" id="reset">New Colors</button>
-    <span class="" id="message"></span>
-    <button class="waves-effect waves-light btn mode amber darken-1">Easy</button>
-    <button class="waves-effect waves-light btn mode selected red darken-1">Hard</button>
-  </div>
+<div class="container center-align">
+  <p>
+    Guess the color based on <br>
+    the RGB value shown above!
+  </p>
+</div>
+
   <div class="container">
-    <div class="square z-depth-3"></div>
-    <div class="square z-depth-3"></div>
-    <div class="square z-depth-3"></div>
-    <div class="square z-depth-3"></div>
-    <div class="square z-depth-3"></div>
-    <div class="square z-depth-3"></div>
-  </div>
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="game.js" type="text/javascript" charset="utf-8" async defer></script>
+    <div class="row">
+      <button class="waves-effect waves-light btn blue darken-1 col s12 m4" id="reset">New Colors</button>
+      <span class="col s12 m4 center-align" id="message">something</span>
+        <div class="btn pulse col s12 m4">
+          <div class="switch">
+            <label>
+        Hard
+        <input type="checkbox">
+        <span class="lever"></span>
+        Easy
+      </label>
+      </div>
+    </div>
+</div>
+</div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col s1 m3 square z-depth-3"></div>
+      <div class="col s1 m3 square z-depth-3"></div>
+      <div class="col s1 m3 square z-depth-3"></div>
+      <div class="col s1 m3 square z-depth-3"></div>
+      <div class="col s1 m3 square z-depth-3"></div>
+      <div class="col s1 m3 square z-depth-3"></div>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="game.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 
 </html>

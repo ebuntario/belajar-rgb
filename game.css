@@ -35,8 +35,8 @@ span {
 }
 
 .menu {
-  text-align: center;
   height: 50px;
+  margin: auto;
 }
 
 button {
@@ -48,18 +48,13 @@ button {
   color: #fff;
 }
 
-button:active {
-  background: none;
-}
-
-button:hover {
-  color: #3b3a36;
-  background-color: #b3c2bf;
+label {
+  font-size: 80%;
+  color: #fff;
 }
 
 #message {
   display: inline-block;
-  width: 20%;
 }
 
 .selected {
@@ -67,17 +62,11 @@ button:hover {
   background-color: #b3c2bf;
 }
 
-.container {
-  margin: 20px auto;
-  width: 60%;
-}
-
-.square {
-  float: left;
+.row .col.m3.square {
   background-color: #b3c2bf;
-  margin: 1.66%;
-  padding-bottom: 30%;
+  height: 8em;
   width: 30%;
+  margin: 1.66667%;
   border-radius: 5%;
   transition: all .3s;
 }
